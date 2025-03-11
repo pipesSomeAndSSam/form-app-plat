@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { supabase } from '../../lib/helper/supabaseClient';
+import Form from '../forms/Form.css'
 
 const Forms = () => {
   const [isClicked, setIsClicked] = useState(false);
@@ -133,12 +134,13 @@ const Forms = () => {
             <div className="textnodata">No Data available</div>
         )}
       </div>
-        <div className="footer">
-            <div className="footer-info">QuickFormz by: Arradaza</div>
-        </div>
+      <div className="header">
+        <div className="website-name">QuickFormz</div>
+        <div className="website-info">Input information in the boxes below.</div>
+      </div>
     </div>
   );
-};//
+};
 
 export default Forms;
 
