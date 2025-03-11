@@ -134,9 +134,8 @@ const Forms = () => {
             <div className="textnodata">No Data available</div>
         )}
       </div>
-      <div className="header">
-        <div className="website-name">QuickFormz</div>
-        <div className="website-info">Input information in the boxes below.</div>
+      <div className="footer">
+        <div className="footer-info">QuickFormz by: Arradaza</div>
       </div>
     </div>
   );
