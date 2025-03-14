@@ -10,6 +10,8 @@
     margin-bottom: 70px;
 }
 
+
+
 ::placeholder {
     color: rgb(215, 210, 215);
     opacity: 1; /* Firefox */
@@ -154,15 +156,29 @@ div.routecon{
     padding: 20px;
 }
 
+.inputnb{
+    display: flex;
+    align-items: center;
+    border-color: #e5e1e1;
+    border-style: solid;
+    margin: auto;
+    width: 400px;
+    height: 20px;
+    border-radius: 6px;
+    padding: 20px;
+}
+
 .input input{
     height: 50px;
-    width: 400px;
+    min-width: 400px;
     background: transparent;
     border: none;
     outline: none;
     color: #797979;
     font-size: 19px;
 }
+
+
 
 .submit-container{
     display: flex;
@@ -189,19 +205,29 @@ div.routecon{
     background: linear-gradient(90deg,#7457bc,#362bad);
 }
 
-ul.no-bulets{
+.containergrid{
+    padding-right: 60px;
+    padding-left: 60px;
+    justify-content: center;
+    margin: auto;
+    max-width: 800px;
+    margin-top: 70px;
+    background: #fff;
+    padding-bottom: 30px;
+    border-radius: 10px;
+    margin-bottom: 70px;
+}
+
+
+ul.no-bulets-info{
     list-style-type: none;
     padding: 0;
     margin-left:10px;
     display: flex;
     flex-direction:row;
     align-items: center;
-    justify-content: space-between;
-    gap: 30px;
-}
-li.add{
-}
-li.seelist{
+    justify-content: space-around;
+    
 }
 
 .infofetch{
@@ -217,6 +243,7 @@ li.seelist{
     padding-bottom: 20px;
     padding-left: 20px;
     padding-right: 20px;
+    border-radius: 10px;
 }
 
 ul.no-bulets-info{
@@ -224,8 +251,24 @@ ul.no-bulets-info{
     padding: 0;
     margin-left:10px;
     display: flex;
-    flex-direction:column;
-    align-items: center;
-    justify-content: space-between;
+    flex-wrap: wrap;
     gap: 10px;
+}
+
+.image-preview {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+  
+.image-fit {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.search-container{
+    align-items: center;
+    padding-top: 50px;
 }
