@@ -38,6 +38,13 @@ const Forms = () => {
     }
   };
 
+  const handleContactChange = (event) => {
+    const value = event.target.value;
+    if (/^\d*$/.test(value)) {
+      setContact(value);
+    }
+  };
+
   const handleSubmit = async (event) => {
     event.preventDefault();
     setIsClicked(true);
@@ -117,7 +124,7 @@ const Forms = () => {
           <div className="inputholder">
             <div className="place-holder">Your Contact Number</div>
             <div className="input">
-              <input type="text" placeholder="09671951947" value={contact} onChange={(e) => setContact(e.target.value)} />
+              <input type="text" placeholder="09671951947" value={contact} onChange={handleContactChange} />
             </div>
           </div>
         </div>
@@ -127,6 +134,9 @@ const Forms = () => {
           </div>
         </div>
       </div>
+
+
+
       <div className="header">
         <div className="website-name">QuickFormz</div>
         <div className="website-info">Search or see people.</div>
